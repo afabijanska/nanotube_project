@@ -18,3 +18,5 @@ To run the code:
 4. Run count_regions to get the region stats
 
 A minimal data sample required to run the code is suplemented. Please unzip minimal_data_sample.zip to the directory containing source code.
+
+The code was developed and executed on a Windows 10 Pro system within an Anaconda environment. All software dependencies are specified in the accompanying requirements.txt file.

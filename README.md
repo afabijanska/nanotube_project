@@ -1,3 +1,36 @@
+# Nanotube Image Annotation and Region Statistics
+
+This repository contains code used to support the analysis of wetting dynamics inside nanotubes in the manuscript:
+"Capturing atomic wetting dynamics in real time" by
+George T. Tebbutt, Christopher S. Allen, Mohsen Danaie, Anna Fabijańska, Barbara M. Maciejewska, Nicole Grobert
+
+A custom image segmentation model is trained to identify annotated regions in microscopy images, allowing automated counting of region statistics. The machine learning model is used purely as a tool within the broader physical analysis and is not the main research contribution.
+
+---
+
+## 🖥️ System Requirements
+
+- OS: Windows 10 Pro
+- Environment: Python 3.10+ (recommended via Anaconda)
+- RAM: ≥ 8 GB
+- GPU: optional (for faster training/prediction)
+
+All required Python packages are listed in `requirements.txt`. Installation in a virtual environment is strongly recommended.
+
+---
+
+## ⚙️ Installation
+
+Clone the repository and set up the environment:
+
+```bash
+git clone https://github.com/afabijanska/nanotube_project.git
+cd nanotube_project
+conda create -n nanotube_env python=3.10
+conda activate nanotube_env
+pip install -r requirements.txt
+
+
 # nanotube_project
 Source code of the ML model associated with submission "Capturing atomic wetting dynamics in real time" by
 George T. Tebbutt, Christopher S. Allen, Mohsen Danaie, Anna Fabijańska, Barbara M. Maciejewska, Nicole Grobert

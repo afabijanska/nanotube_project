@@ -29,6 +29,7 @@ cd nanotube_project
 conda create -n nanotube_env python=3.9
 conda activate nanotube_env
 pip install -r requirements.txt
+```
 
 ## Demo / Minimal Example
 
@@ -76,8 +77,13 @@ python patch_filter_predict_with_mask.py
 python count_regions.py
 ```
 
-The resulting region image labels are saved in test/preds directory, similar to statistics saved as csv file in the same directory.
+The resulting region image labels are saved in `test/preds` directory, similar to statistics saved as csv file in the same directory.
 
+## Reproducibility Notes
+
+- The provided minimal dataset allows testing the workflow end-to-end.
+- For full-scale experiments used in the manuscript, replace the `train/` and `test/` directories with the full dataset.
+ 
 ---
 
 # nanotube_project

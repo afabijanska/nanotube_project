@@ -12,10 +12,12 @@ A custom image segmentation model is trained to identify nanotube regions in mic
 
 - OS: Windows 10 Pro
 - Environment: Python 3.9+ (recommended via Anaconda)
-- RAM: ≥ 8 GB
-- GPU
+- RAM: ≥ 64 GB (tested on 128 MB)
+- GPU (tested on NVIDIA Quadro RTX 6000)
   
 All required Python packages are listed in `requirements.txt`. Installation in a virtual environment is strongly recommended.
+
+The code was tested with GPU support. CPU-only runs are not recommended and have not been validated.
 
 ---
 
@@ -60,6 +62,12 @@ This will create the following structure:
 ```
 
 ---
+
+Expected run time of demo:
+- Training time: ~30 minutes
+- Prediction time: ~5 minutes per image
+
+Actual times will vary with hardware used, dataset size and image resolution.
 
 ## Usage Instructions
 

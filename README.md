@@ -31,6 +31,8 @@ conda activate nanotube_env
 pip install -r requirements.txt
 ```
 
+---
+
 ## Demo / Minimal Example
 
 A minimal working dataset is provided in `minimal_data_sample.zip`.  
@@ -54,6 +56,8 @@ This will create the following structure:
 │   ├── preds/        # will contain predicted masks
 │   └── tube_masks/   # binary masks of the tube region
 ```
+
+---
 
 ## Usage Instructions
 
@@ -79,32 +83,15 @@ python count_regions.py
 
 The resulting region image labels are saved in `test/preds` directory, similar to statistics saved as csv file in the same directory.
 
+---
+
 ## Reproducibility Notes
 
 - The provided minimal dataset allows testing the workflow end-to-end.
 - For full-scale experiments used in the manuscript, replace the `train/` and `test/` directories with the full dataset.
- 
+
 ---
 
-# nanotube_project
-Source code of the ML model associated with submission "Capturing atomic wetting dynamics in real time" by
-George T. Tebbutt, Christopher S. Allen, Mohsen Danaie, Anna Fabijańska, Barbara M. Maciejewska, Nicole Grobert
+ ## License
 
-To run the code:
-1. Create directory train containing subdirectories: 
-- org -> containing original images
-- markings -> containing images with manual annotations
-- labels2 -> containing labels from training extracted from manual markings
-
-2. Create directory test containing subdidectories
-- org -> containing images for prediction
-- preds -> for predicted images
-- tube_masks -> containing binary masks of tube regions 
-
-2. Run patch_filter_train.py to train the model
-3. Run patch_filter_predict_with_mask.py to get the predictions
-4. Run count_regions to get the region stats
-
-A minimal data sample required to run the code is suplemented. Please unzip minimal_data_sample.zip to the directory containing source code.
-
-The code was developed and executed on a Windows 10 Pro system within an Anaconda environment. All software dependencies are specified in the accompanying requirements.txt file.
+This project is covered under the Apache 2.0 License.  

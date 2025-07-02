@@ -17,4 +17,4 @@ To run the code:
 3. Run patch_filter_predict_with_mask.py to get the predictions
 4. Run count_regions to get the region stats
 
-Minimal sample of data required to run the code is suplemented.
+A minimal data sample required to run the code is suplemented. Please unzip minimal_data_sample.zip to the directory containing source code.

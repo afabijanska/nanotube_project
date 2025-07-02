@@ -1,6 +1,6 @@
 # nanotube_project
 Source code of the ML model associated with submission "Capturing atomic wetting dynamics in real time" by
-George T. Tebbutt, Christopher S. Allen, Mohsen Danaie, Anna Fabijańska3, Barbara M. Maciejewska, Nicole Grobert
+George T. Tebbutt, Christopher S. Allen, Mohsen Danaie, Anna Fabijańska, Barbara M. Maciejewska, Nicole Grobert
 
 To run the code:
 1. Create directory train containing subdirectories: 

@@ -116,7 +116,8 @@ If you want to skip training and directly test the pipeline using a pre-trained 
    ```python
    best_weights_file = 'trained_model_weights.h5'
    
-3. **Run prediction as usual**   
+3. **Run prediction as usual**
+
   ```bash
   python patch_filter_predict_with_mask.py
   ```

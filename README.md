@@ -121,6 +121,8 @@ If you want to skip training and directly test the pipeline using a pre-trained 
   ```bash
   python patch_filter_predict_with_mask.py
   ```
+---
+
 ## Reproducibility Notes
 
 - The provided minimal dataset allows testing the workflow end-to-end.

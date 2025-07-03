@@ -41,9 +41,9 @@ conda activate nanotube_env
 pip install -r requirements.txt
 ```
 
----
-
 Typical installation time on a standard computer with a stable internet connection is several minutes.
+
+---
 
 ## Demo / Minimal Example
 

@@ -6,13 +6,13 @@ George T. Tebbutt, Christopher S. Allen, Mohsen Danaie, Anna Fabijańska, Barbar
 
 Purpose: 
 
-This repository provides a patch-based convolutional neural network (CNN) model developed to process high-resolution transmission electron microscopy (HRTEM) datasets that capture * *in situ* * atomic-scale processes across multiple frames.
+This repository provides a patch-based convolutional neural network (CNN) model developed to process high-resolution transmission electron microscopy (HRTEM) datasets that capture *in situ* atomic-scale processes across multiple frames.
 
 The CNN architecture is specifically designed to preserve native atomic resolution, using a 64x64 patch that rasters across micrographs of up to 2500x5000 pixels in size. Each central pixel is classified based on the local atomic texture surrounding it, allowing the model to resolve subtle structural variations without image downsampling or interpolation.
 
 Once trained, the model enables automated, large-scale identification of structural regions based on their atomic texture. The model can distinguish between amorphous domains, crystalline regions (including intermediate oxides phases), liquid phases, long-range ordered features (e.g., carbon nanotube walls), and the background TEM vacuum.
 
-By applying the model across large * *in situ* * datasets, allows for the extraction of statistical trends within and across samples, including tracking phase transformations, quantifying wetting behaviour, and analysing nanowire growth dynamics at atomic resolution as presented here.
+By applying the model across large *in situ* datasets, allows for the extraction of statistical trends within and across samples, including tracking phase transformations, quantifying wetting behaviour, and analysing nanowire growth dynamics at atomic resolution as presented here.
 
 ---
 

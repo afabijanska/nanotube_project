@@ -1,10 +1,18 @@
-# Nanotube Image Annotation and Region Statistics
+# Nanotube Image Segmentation and Region Tracking: CNN-Based Patch Classifier for in situ HRTEM datasets
 
 This repository contains code used to support the analysis of wetting dynamics inside nanotubes in the manuscript:
 "Capturing atomic wetting dynamics in real time" by
 George T. Tebbutt, Christopher S. Allen, Mohsen Danaie, Anna Fabijańska, Barbara M. Maciejewska, Nicole Grobert
 
-A custom image segmentation model is trained to identify nanotube regions in microscopy images, allowing automated counting of region statistics. The machine learning model is used purely as a tool within the broader physical analysis and is not the main research contribution.
+Purpose: 
+
+This repository provides a patch-based convolutional neural network (CNN) model developed to process high-resolution transmission electron microscopy (HRTEM) datasets that capture * *in situ* * atomic-scale processes across multiple frames.
+
+The CNN architecture is specifically designed to preserve native atomic resolution, using a 64x64 patch that rasters across micrographs of up to 2500x5000 pixels in size. Each central pixel is classified based on the local atomic texture surrounding it, allowing the model to resolve subtle structural variations without image downsampling or interpolation.
+
+Once trained, the model enables automated, large-scale identification of structural regions based on their atomic texture. The model can distinguish between amorphous domains, crystalline regions (including intermediate oxides phases), liquid phases, long-range ordered features (e.g., carbon nanotube walls), and the background TEM vacuum.
+
+By applying the model across large * *in situ* * datasets, allows for the extraction of statistical trends within and across samples, including tracking phase transformations, quantifying wetting behaviour, and analysing nanowire growth dynamics at atomic resolution as presented here.
 
 ---
 
@@ -95,6 +103,24 @@ The resulting region image labels are saved in `test/preds` directory, similar t
 
 ---
 
+### Using a Pre-Trained Model
+
+If you want to skip training and directly test the pipeline using a pre-trained model:
+
+1. **Copy the provided model weights**  
+   Place the file `trained_model_weights.h5` into the **root directory** of the repository.
+
+2. **Update the prediction script**  
+   Open `patch_filter_predict_with_mask.py` and modify line 87 as follows:
+
+   ```python
+   best_weights_file = 'trained_model_weights.h5'
+
+3. **Run prediction as usual**
+   
+```bash
+python patch_filter_predict_with_mask.py
+```
 ## Reproducibility Notes
 
 - The provided minimal dataset allows testing the workflow end-to-end.

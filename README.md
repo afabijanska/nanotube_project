@@ -110,12 +110,12 @@ If you want to skip training and directly test the pipeline using a pre-trained 
 1. **Copy the provided model weights**  
    Place the file `trained_model_weights.h5` into the **root directory** of the repository.
 
-2. **Update the prediction script**  
+2. **Update the prediction script**
    Open `patch_filter_predict_with_mask.py` and modify line 87 as follows:
 
    ```python
    best_weights_file = 'trained_model_weights.h5'
-
+   
 3. **Run prediction as usual**   
   ```bash
   python patch_filter_predict_with_mask.py

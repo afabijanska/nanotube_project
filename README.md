@@ -103,7 +103,7 @@ The resulting region image labels are saved in `test/preds` directory, similar t
 
 ---
 
-### Using a Pre-Trained Model
+## Using a Pre-Trained Model
 
 If you want to skip training and directly test the pipeline using a pre-trained model:
 

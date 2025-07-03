@@ -69,13 +69,13 @@ This will create the following structure:
 │   └── tube_masks/   # binary masks of the tube region
 ```
 
----
-
 Expected run time of demo:
 - Training time: ~30 minutes
 - Prediction time: ~5 minutes per image
 
 Actual times will vary with hardware used, dataset size and image resolution.
+
+---
 
 ## Usage Instructions
 

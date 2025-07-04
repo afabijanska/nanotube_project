@@ -2,7 +2,7 @@
 
 This repository contains code used to support the analysis of wetting dynamics inside nanotubes in the manuscript:
 "Capturing atomic wetting dynamics in real time" by
-George T. Tebbutt, Christopher S. Allen, Mohsen Danaie, Anna Fabijańska, Barbara M. Maciejewska, Nicole Grobert
+George T. Tebbutt, Christopher S. Allen, Anna Fabijańska, Barbara M. Maciejewska, Nicole Grobert
 
 Purpose: 
 
